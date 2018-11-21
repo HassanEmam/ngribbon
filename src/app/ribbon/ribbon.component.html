@@ -1,0 +1,130 @@
+<mat-toolbar color="primary">
+	Angular Material Ribbon Demo
+</mat-toolbar>
+<div class="basic-container">
+	<section class="ribbon-container">
+		<mat-card>
+			<mat-card-content>
+				<section class="ribbon-section">
+					<button mat-button [matMenuTriggerFor]="mailMenu" class="large-button">
+            <section class="large-button-container">
+              <mat-icon class="main-icon">mail_outline</mat-icon>
+              <div class="main-text">
+                <span>Get Mail</span>
+                <mat-icon class="drop-down-icon">arrow_drop_down</mat-icon>
+              </div>
+              <mat-menu #mailMenu="matMenu" class="large-button-panel">
+                <button mat-menu-item>
+                  <mat-icon></mat-icon>
+                  <span>Get All New Message</span>
+                  <span class="pull-right hint">Ctrl + G</span>
+                </button>
+                <mat-divider></mat-divider>
+                <button mat-menu-item>
+                  <mat-icon>mail_outline</mat-icon>
+                  <span>test@foo.bar.com</span>
+                </button>
+                <button mat-menu-item>
+                  <mat-icon>mail_outline</mat-icon>
+                  <span>test@foo.bar.com</span>
+                </button>
+                <button mat-menu-item>
+                  <mat-icon>mail_outline</mat-icon>
+                  <span>test@foo.bar.com</span>
+                </button>
+                <mat-divider></mat-divider>
+                <button mat-menu-item>
+                  <mat-icon>rss_feede</mat-icon>
+                  <span>Blog & News Feeds</span>
+                  <span class="pull-right hint">Ctrl + R</span>
+                </button>
+              </mat-menu>
+            </section>
+					</button>
+	      </section>
+
+        <section class="ribbon-section">
+          <button mat-button class="large-button">
+            <section class="large-button-container">
+              <mat-icon class="main-icon">edit</mat-icon>
+              <div class="main-text">
+                <span>New Email</span>
+              </div>
+            </section>
+          </button>
+        </section>
+
+        <section class="ribbon-section">
+          <mat-nav-list>
+            <a mat-list-item>
+              <mat-icon>contacts</mat-icon>
+              <span>Address Book</span>
+            </a>
+            <a mat-list-item>
+              <mat-icon>person_add</mat-icon>
+              <span>New Contact</span>
+            </a>
+            <a mat-list-item>
+              <mat-icon>group_add</mat-icon>
+              <span>New Group</span>
+            </a>
+          </mat-nav-list>
+        </section>
+
+        <section class="ribbon-section">
+          <mat-nav-list>
+            <a mat-list-item>
+              <mat-checkbox>Flagged</mat-checkbox>
+            </a>
+            <a mat-list-item>
+              <mat-checkbox>Personal</mat-checkbox>
+            </a>
+            <a mat-list-item>
+              <mat-checkbox mat-list-item>Work</mat-checkbox>
+            </a>
+          </mat-nav-list>
+        </section>
+
+        <section class="ribbon-section">
+          <mat-nav-list>
+            <mat-button-toggle-group #group="matButtonToggleGroup">
+              <mat-button-toggle value="left">
+                <mat-icon>format_align_left</mat-icon>
+              </mat-button-toggle>
+              <mat-button-toggle value="center">
+                <mat-icon>format_align_center</mat-icon>
+              </mat-button-toggle>
+              <mat-button-toggle value="right">
+                <mat-icon>format_align_right</mat-icon>
+              </mat-button-toggle>
+              <mat-button-toggle value="justify" disabled>
+                <mat-icon>format_align_justify</mat-icon>
+              </mat-button-toggle>
+            </mat-button-toggle-group>
+          </mat-nav-list>
+
+          <mat-nav-list>
+            <mat-form-field>
+              <mat-select placeholder="Font Size">
+                <mat-option>10px</mat-option>
+                <mat-option>12px</mat-option>
+                <mat-option>14px</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </mat-nav-list>
+        </section>
+
+      </mat-card-content>
+      <mat-card-footer>
+        <span>Ribbon Demo</span>
+      </mat-card-footer>
+	  </mat-card>
+	</section>
+</div>
+
+<!--
+Copyright Google LLC All Rights Reserved.
+
+Use of this source code is governed by an MIT-style license that can be
+found in the LICENSE file at https://angular.io/license
+-->

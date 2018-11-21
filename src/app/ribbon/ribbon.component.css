@@ -1,0 +1,73 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+}
+.basic-container {
+  padding: 5px;
+}
+.version-info {
+  font-size: 8pt;
+  float: right;
+}
+.ribbon-container .mat-card {
+  padding: 0px;
+  margin: 5px;
+}
+.ribbon-container .mat-card-content {
+  display: flex;
+  padding: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.ribbon-container .mat-card-footer {
+  margin: auto;
+  text-align: center;
+  background: #ccc;
+}
+.ribbon-container .large-button {
+  height: 120px;
+}
+.ribbon-container .large-button .large-button-container {
+  display: flex;
+  flex-direction: column;
+}
+.ribbon-container .large-button .large-button-container .main-icon {
+  flex: 80%;
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+.ribbon-container .large-button .large-button-container .main-text {
+  display: inline-flex;
+  margin: auto;
+}
+.ribbon-container .large-button .large-button-container .main-text .drop-down-icon {
+  margin: auto;
+}
+.ribbon-container .mat-nav-list .mat-icon {
+  padding-right: 5px;
+}
+.ribbon-container .mat-nav-list .mat-list-item {
+  height: 36px !important;
+}
+.large-button-panel {
+  margin-top: 120px;
+  min-width: 300px !important;
+  max-width: 600px !important;
+}
+.large-button-panel .mat-menu-item .pull-right {
+  float: right;
+  padding-left: 15px;
+}
+.large-button-panel .mat-menu-item .hint {
+  color: #999;
+}
+/**
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
